@@ -7,8 +7,7 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <button color="secondary" ion-button (tap)="presentActionSheet()" block> Choose Image  </button>
+  <button color="secondary" ion-button (tap)="chooseFile()" block> Choose File  </button>
+  <button color="secondary" [disabled]="fileArray.length == 0  && imageArr.length == 0" ion-button (tap)="uploadImageAndFile()" block> Upload Image/File  </button>
 </ion-content>

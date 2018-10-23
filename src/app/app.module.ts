@@ -7,6 +7,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
+import { IOSFilePicker } from '@ionic-native/file-picker';
+import { FileChooser } from '@ionic-native/file-chooser';
+import { Camera, CameraOptions } from '@ionic-native/camera';
+import  { Base64 } from '@ionic-native/base64';
+import { FilePath } from '@ionic-native/file-path';
+import { HttpModule } from "@angular/http";
+
 @NgModule({
   declarations: [
     MyApp,
@@ -14,6 +21,7 @@ import { HomePage } from '../pages/home/home';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -24,6 +32,11 @@ import { HomePage } from '../pages/home/home';
   providers: [
     StatusBar,
     SplashScreen,
+    IOSFilePicker,
+    FileChooser,
+    Camera,
+    Base64,
+    FilePath,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
