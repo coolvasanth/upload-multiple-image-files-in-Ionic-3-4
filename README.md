@@ -11,7 +11,7 @@ In all the major languages(Java, c#, nodeJS, pHp etc) which are used for writing
 
 ## Steps to use this repository.
 
-- Clone this project with this command `git clone https://github.com/coolvasanth/upload-multiple-image-files-in-Ionic-3-4.git`
+- Clone this repository with this command `git clone https://github.com/coolvasanth/upload-multiple-image-files-in-Ionic-3-4.git`
 - `cd upload-multiple-image-files-in-Ionic-3-4`
 - `npm install`
 - `ionic cordova platform add android` for android
